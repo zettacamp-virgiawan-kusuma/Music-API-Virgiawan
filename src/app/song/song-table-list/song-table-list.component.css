@@ -4,6 +4,45 @@
   align-items: center;
 }
 
-.bg-black{
-  background-color: #000000;
+table {
+  background-color: #101010;
+  border: 2px solid #5a5a5a;
+}
+
+.mat-cell {
+  border: 2px solid #5a5a5a;
+  padding-left: 10px;
+}
+
+.mat-header-cell {
+  border: 2px solid #5a5a5a;
+  text-align: center;
+  font-size: 1rem;
+}
+
+.mat-mini-fab {
+  margin: 0 3px;
+}
+
+.mat-row {
+  cursor: pointer;
+}
+
+.mat-row:nth-child(even) {
+  background-color: #303030;
+}
+.mat-row:nth-child(even):hover {
+  background-color: #101010;
+}
+
+.mat-row:nth-child(odd) {
+  background-color: #5f7d8b
+}
+.mat-row:nth-child(odd):hover {
+  background-color: #00a800;
+
+}
+
+mat-paginator {
+  background-color: transparent;
 }

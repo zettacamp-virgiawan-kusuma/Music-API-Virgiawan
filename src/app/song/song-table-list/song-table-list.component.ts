@@ -13,6 +13,7 @@ import { SongService } from '../song.service';
 export class SongTableListComponent implements OnInit {
 
   displayedColumns: string[] = ['name', 'genre', 'duration', 'created_by', 'action'];
+  filteredColumns: string[] = ['filter-name', 'filter-genre', 'filter-created_by'];
 
   songs:any = new MatTableDataSource([]);
 
