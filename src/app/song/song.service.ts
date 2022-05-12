@@ -9,18 +9,25 @@ export class SongService {
   songs = [
     {
       "_id": "1",
-      "name": "Song 1",
+      "name": "Elora",
       "genre": "Rock",
-      "duration": "3:00",
-      "created_by": "1",
+      "duration": "5:00",
+      "created_by": "Pure Saturday",
     },
     {
       "_id": "2",
-      "name": "Song 2",
+      "name": "Pathetic Waltz",
       "genre": "Pop",
-      "duration": "3:00",
-      "created_by": "2",
-    }
+      "duration": "4:00",
+      "created_by": "Pure Saturday",
+    },
+    {
+      "_id": "3",
+      "name": "Kuning",
+      "genre": "Indie Rock",
+      "duration": "11:52",
+      "created_by": "Efek Rumah Kaca",
+    },
   ]
 
   songsNew = new BehaviorSubject<any>(this.songs);

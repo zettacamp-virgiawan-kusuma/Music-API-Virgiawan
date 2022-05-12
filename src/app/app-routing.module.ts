@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { SongDetailPageComponent } from './song/song-detail-page/song-detail-page.component';
 
 const routes: Routes = [
   {
@@ -9,6 +10,10 @@ const routes: Routes = [
   {
     path: 'song',
     loadChildren: () => import('./song/song.module').then((m) => m.SongModule),
+  },
+  {
+    path: 'detail/:id',
+    component: SongDetailPageComponent
   },
   {
     path:'**', redirectTo: 'login', pathMatch: 'full'

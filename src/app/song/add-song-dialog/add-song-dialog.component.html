@@ -1,26 +1,36 @@
-<mat-dialog-content class="mat-typography">
-  <form class="example-form">
-      <mat-form-field class="example-full-width w-100 mb-3" appearance="fill">
-          <mat-label>Name</mat-label>
-          <input matInput placeholder="Ex. Elora Pure Saturday">
-      </mat-form-field>
-      <br>
+<mat-dialog-actions class="p-0 m-0">
+  <h1 mat-dialog-title>Add Song</h1>
+  <h1 class="ms-auto">
+    <button mat-button mat-dialog-close>
+      <mat-icon>close</mat-icon>
+    </button>
+  </h1>
+</mat-dialog-actions>
+<mat-divider></mat-divider>
 
-      <mat-form-field class="example-full-width w-100 mb-3" appearance="fill">
-          <mat-label>Genre</mat-label>
-          <input matInput placeholder="Ex. Pop">
-      </mat-form-field>
-      <br>
+<mat-dialog-content>
+  <form class="py-4">
+    <mat-form-field>
+      <mat-label>Name</mat-label>
+      <input matInput placeholder="Ex. Elora Pure Saturday">
+    </mat-form-field>
+    <br>
 
-      <mat-form-field class="example-full-width w-100 mb-3" appearance="fill">
-          <mat-label>Duration</mat-label>
-          <input matInput placeholder="Ex. 3:00">
-      </mat-form-field>
-      <br>
+    <mat-form-field>
+      <mat-label>Genre</mat-label>
+      <input matInput placeholder="Ex. Pop">
+    </mat-form-field>
+    <br>
 
-      <mat-dialog-actions>
-        <button mat-flat-button color="primary">Add Song</button>
-        <button mat-button mat-dialog-close>Cancel</button>
-      </mat-dialog-actions>
+    <mat-form-field>
+      <mat-label>Duration</mat-label>
+      <input matInput placeholder="Ex. 3:00">
+    </mat-form-field>
+    <br>
   </form>
 </mat-dialog-content>
+<mat-divider></mat-divider>
+<mat-dialog-actions class="justify-content-end">
+  <button class="btn btn-danger" mat-raised-button mat-dialog-close>Cancel</button>
+  <button class="btn btn-primary" mat-raised-button>Submit</button>
+</mat-dialog-actions>

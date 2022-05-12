@@ -1,0 +1,19 @@
+::ng-deep .mat-dialog-container{
+  min-width: 640px !important;
+  background-color: #fff !important;
+  color: #000 !important;
+}
+
+.mat-divider{
+  border-color: #000 !important;
+}
+
+form mat-label,
+::ng-deep .mat-form-field-appearance-fill .mat-form-field-underline:before
+{
+  color: #b1b1b1;
+}
+
+form mat-form-field{
+  width: 100%;
+}
