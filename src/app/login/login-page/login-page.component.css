@@ -4,6 +4,28 @@
   align-items: center;
 }
 
-.bg-black{
-  background-color: #000000;
+.card-container{
+  background-color: #101010;
+}
+
+.card-login{
+  background-color: transparent;
+  width: 80%;
+  margin: auto;
+}
+
+.language-selector {
+  position: absolute;
+  background-color: transparent;
+  border: none;
+  right: 0%;
+}
+
+.language-selector img{
+  width: 24px;
+}
+
+.btn-success{
+  background-color: #00a800;
+  border-color: #00a800;
 }

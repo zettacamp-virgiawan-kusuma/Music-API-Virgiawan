@@ -1,25 +1,33 @@
-<div class="container-fluid bg-dark">
+<div class="container-fluid">
   <div class="row justify-content-center vertical-center">
-    <div class="col-10 col-xl-8 col-lg-8">
-      <mat-card class="p-5 text-center bg-black">
+    <div class="col-8 col-xl-6 col-lg-6 card-container">
+      <mat-card class="p-5 text-center card-login">
+        <button class="language-selector">
+          <img
+            src="../../../assets/images/eng-lang.png"
+            alt="language"
+          />
+        </button>
         <mat-card-title class="text-warning h1">ADMTC V2</mat-card-title>
         <mat-card-subtitle>Welcome to ADMTC V2</mat-card-subtitle>
         <mat-card-content>
           <form [formGroup]="loginForm">
             <mat-form-field class="w-100">
               <input matInput type="email" placeholder="Email" formControlName="email">
+              <span matSuffix><mat-icon>verified_user</mat-icon></span>
             </mat-form-field>
             <mat-form-field class="w-100">
               <input matInput type="password" placeholder="Password" formControlName="password">
+              <span matSuffix><mat-icon>vpn_key</mat-icon></span>
             </mat-form-field>
           </form>
         </mat-card-content>
         <mat-divider inset></mat-divider>
         <mat-card-actions>
           <p class="text-start">
-            <a mat-button (click)="onForgotPassword()">Forgot Password ?</a>
+            <button mat-button (click)="onForgotPassword()">Forgot Password ?</button>
           </p>
-          <button mat-raised-button color="accent" (click)="login()" [disabled]="loginForm.invalid">LOGIN</button>
+          <button class="btn btn-success px-4" mat-raised-button (click)="login()" [disabled]="loginForm.invalid">LOGIN</button>
         </mat-card-actions>
       </mat-card>
     </div>
